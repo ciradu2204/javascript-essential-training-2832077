@@ -60,3 +60,19 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+const content2 = `
+ <ul>
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact Us</li>
+  <li>Countries</li>
+  <li>Email</li>
+</ul>
+`;
+
+const nav = document.createElement("nav"); 
+nav.innerHTML = content2;
+main.append(nav);
+// const referenceNode = document.querySelector(header);
+// referenceNode.before(nav);

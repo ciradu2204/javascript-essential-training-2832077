@@ -91,3 +91,18 @@ const main = document.querySelector(".maincontent");
 backpackList.forEach((backpack) => {
   main.append(backpack);
 });
+
+const elements = document.querySelectorAll(".backpack__strap");
+
+elements.forEach((element) => {
+  const dataSide = element.getAttribute("data-side");
+  console.log(dataSide);
+  const form = document.createElement("form");
+  const content = `<input type="text" class="inputText"><input type="submit" value="update" class="updateButton">`;
+  form.innerHTML = content;
+  element.append(form);
+  const button = document.querySelector(".updateButton");
+  button.addEventListener("click", () => {
+    const input = document.querySelector(".inputText").innerHTML;
+  });
+});

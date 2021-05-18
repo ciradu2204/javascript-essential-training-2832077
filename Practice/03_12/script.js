@@ -6,3 +6,9 @@
  * - Create several objects using the class.
  * - Test the objecs by calling their properties and using their methods in the console.
  */
+
+import Room from "./Room.js";
+
+const room1 = new Room("red", 12, true, true);
+
+console.log(room1);
